@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/cadastro.css" />
+    <title>Cadastro</title>
+
+    <script>
+        function login() {
+            
+            window.location.href = 'login.html';
+        }
+    </script>
+</head>
+<body>
+    <div class="cadastro-container">
+        <img class="logo-login" src="./imagens/logoAnama.png" alt="">
+        <h2>Anamã</h2>
+        <h3>Cadastro</h3>
+        <div class="inputs-container">
+            <input type="text" placeholder="Nome">
+            <input type="text" placeholder="CPF">
+            <input type="email" placeholder="Exemplo@gmail.com">
+            <input type="password" placeholder="Senha">
+            <button onclick="login()">Cadastrar</button>
+            <a href="login.html">Já tem uma conta? Faça login</a>
+        </div>
+    </div>
+</body>
+</html>
