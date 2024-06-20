@@ -19,8 +19,31 @@
         <button type="submit">Cadastrar</button>
     </form>
 
-    <h3>Usuários Cadastrados</h3>
-    <ul id="lista-usuarios"></ul>
+    <div> 
+        <button id="mostrar-pesquisa" type="button">PESQUISAR USUARIO</button>
+    </div>
+
+    <div id="campo-pesquisa" style="display: none;">
+        <input id="pesquisa" placeholder="Digite ID ou E-mail" type="text"/>
+        <button id="botao-pesquisar" type="button">Pesquisar</button>
+    </div>
+
+    <div id="resultado-pesquisa" style="display: none;">
+        <h3>Resultado da Pesquisa</h3>
+        <p id="usuario-encontrado"></p>
+    </div>
+
+    <div>
+        <button id="mostrar-usuario" type="button">TODOS USUARIOS CADASTRADOS</button>
+    </div>
+    
+    <div class="listaUsuario" style="display: none;">
+        <h3>Usuários Cadastrados</h3>
+        <ul id="lista-usuarios"></ul>
+        <div class="botaoExcluirTodos">
+            <button id="excluir-todos" type="button">EXCLUIR TODOS</button>
+        </div>
+    </div>
 
     <script src="./scripts/criarUsuario.js"></script>
 </body>
