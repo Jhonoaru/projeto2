@@ -1,50 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/admin.css"> <!-- Link para o arquivo CSS -->
-</head>
-<body>
+    <link rel="stylesheet" href="./css/admin.css" />
+    <!-- Link para o arquivo CSS -->
+  </head>
+  <body>
     <h1>Cadastro de Usuários</h1>
-    
+
     <form id="formulario">
-        <label>Nome de Usuário: </label>
-        <input id="nome" name="nome" placeholder="Nome" type="text"/>
+      <label>Nome de Usuário: </label>
+      <input id="nome" name="nome" placeholder="Nome" type="text" />
 
-        <label>E-mail: </label>
-        <input id="email" name="email" placeholder="E-mail" type="email"/>
+      <label>E-mail: </label>
+      <input id="email" name="email" placeholder="E-mail" type="email" />
 
-        <button type="submit">Cadastrar</button>
+      <button type="submit">CADASTRAR</button>
+      <button type="button" id="limpar-campos">LIMPAR</button>
     </form>
 
-    <div> 
-        <button id="mostrar-pesquisa" type="button">PESQUISAR USUARIO</button>
+    <div>
+      <button id="mostrar-pesquisa" type="button">PESQUISAR USUARIO</button>
     </div>
 
-    <div id="campo-pesquisa" style="display: none;">
-        <input id="pesquisa" placeholder="Digite ID ou E-mail" type="text"/>
-        <button id="botao-pesquisar" type="button">Pesquisar</button>
+    <div id="campo-pesquisa" style="display: none">
+      <input id="pesquisa" placeholder="Digite ID ou E-mail" type="text" />
+      <button id="botao-pesquisar" type="button">PESQUISAR</button>
     </div>
 
-    <div id="resultado-pesquisa" style="display: none;">
-        <h3>Resultado da Pesquisa</h3>
-        <p id="usuario-encontrado"></p>
+    <div id="resultado-pesquisa" style="display: none">
+      <h3>Resultado da Pesquisa</h3>
+      <p id="usuario-encontrado"></p>
     </div>
 
     <div>
-        <button id="mostrar-usuario" type="button">TODOS USUARIOS CADASTRADOS</button>
+      <button id="mostrar-usuario" type="button">
+        TODOS USUARIOS CADASTRADOS
+      </button>
     </div>
-    
-    <div class="listaUsuario" style="display: none;">
-        <h3>Usuários Cadastrados</h3>
-        <ul id="lista-usuarios"></ul>
-        <div class="botaoExcluirTodos">
-            <button id="excluir-todos" type="button">EXCLUIR TODOS</button>
-        </div>
+
+    <div class="listaUsuario" style="display: none">
+      <h3>Usuários Cadastrados</h3>
+      <ul id="lista-usuarios"></ul>
+      <div class="botaoExcluirTodos">
+        <button id="excluir-todos" type="button">EXCLUIR TODOS</button>
+      </div>
     </div>
 
     <script src="./scripts/criarUsuario.js"></script>
-</body>
+  </body>
 </html>
